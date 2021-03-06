@@ -43,13 +43,13 @@ const Hamburger = ({state}) => {
 
   const staggerReveal = (node1, node2) => {
     gsap.from([node1, node2], {
-      duration: 0.5,
+      duration: 0.4,
       height: 0,
       transformOrigin: "right top",
       skewY: 2,
       ease: "power3.inOut",
       stagger: {
-        amount: 0.5
+        amount: 0.4
       }
     })
   }

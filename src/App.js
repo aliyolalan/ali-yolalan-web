@@ -3,7 +3,6 @@ import "./App.scss";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-require('dotenv').config();
 
 function App() {
   return (
@@ -30,17 +29,25 @@ function App() {
 function Works() {
   return (
     <div className="">
-      Merhaba
+      Burası Portfolyo Olacak, Projeler Burada Görünecek.
     </div>
   );
 }
 
 function About() {
-  return <p>Solutions that help you.</p>;
+  return (
+    <div className="">
+      Burası Hakkımda Kısmı Olacak, Hakkımdaki Bilgiler ve CV Burada Görünecek.
+    </div>
+  );
 }
 
 function Contact() {
-  return <p>Feel free to reach us.</p>;
+  return (
+    <div className="">
+      Burası İletişim Kısmı Olacak, Kişiler Bana Buradan Ulaşacak.
+    </div>
+  );
 }
 
 function Home() {
